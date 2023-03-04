@@ -1,16 +1,29 @@
 # benzyn
 
-A new Flutter project.
+A Flutter android app for counting how much petrol one useses.
 
-## Getting Started
+## Features
+- Simple entry for current mileage and price
+- Calculates average fuel consumption from entries
+- Simple visualization the data
+- Current gas prices near the user using the [Tankerkönig Api](https://creativecommons.tankerkoenig.de/) (only in Germany) 
+## Installing
 
-This project is a starting point for a Flutter application.
+1. Clone the repo
 
-A few resources to get you started if this is your first Flutter project:
+```
+git clone https://github.com/FelixReinhard/Benzyn-flutter-app.git
+``` 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. Make sure you have the [flutter sdk](https://docs.flutter.dev/get-started/install) correctly installed for android apps. You can test this by running 
+```
+flutter doctor
+```
+For more information check [this](https://docs.flutter.dev/get-started/install/windows#android-setup)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3. Now use flutter to compile the app. For example for android (Note that this app is made for Android only, other versions may not work) 
+```
+flutter build apk --release
+```
+
+4. Find the apk in **build/app/outputs/flutter-apk/** and use it however you like.
